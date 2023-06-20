@@ -1,0 +1,29 @@
+{
+  "name": "@martin-braun/runc",
+  "version": "1.0.0",
+  "exports": "./mod.ts",
+  "tasks": {
+    "install": "deno cache --reload deps.ts"
+  },
+  "fmt": {
+    "exclude": [
+      ".git",
+      ".githooks",
+      ".vim",
+      ".vscode"
+    ]
+  },
+  "lint": {
+    "exclude": [
+      ".git",
+      ".githooks",
+      ".vim",
+      ".vscode"
+    ]
+  },
+  "imports": {
+    "@std/assert": "jsr:@std/assert@1",
+    "@std/fs": "jsr:@std/fs@1"
+  },
+  "unstable": []
+}
